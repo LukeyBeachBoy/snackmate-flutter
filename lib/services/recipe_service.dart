@@ -47,7 +47,7 @@ class RecipeService {
     StorageReference imageRef = await _firebaseStorage.getReferenceFromUrl(
         'gs://snackmate-e27e4.appspot.com/recipes/$id.jpg');
     Recipe recipe;
-    return imageRef.getDownloadURL().then((imageURL) {
+    return imageRef.getData(100000000).then((image) {
       recipe = Recipe(
         id: id,
         date: (data['date'] as Timestamp).toDate(),
@@ -60,7 +60,7 @@ class RecipeService {
             protein: data['nutrition']['protein']),
         description: data['description'],
         image:
-        imageURL, //'https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg'
+        image, //'https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg'
       );
       return recipe;
     });

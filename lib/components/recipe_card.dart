@@ -4,7 +4,6 @@ import 'package:snackmate/models/recipe.dart';
 import 'package:simple_moment/simple_moment.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:snackmate/components/snackmate_icons_icons.dart';
-import 'package:transparent_image/transparent_image.dart';
 import 'nutrition_pill.dart';
 
 class RecipeCard extends StatelessWidget {
@@ -14,9 +13,8 @@ class RecipeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FadeInImage _image = FadeInImage.assetNetwork(
-      placeholder: kTransparentImage.toString(),
-      image: _recipe.image,
+    Image _image = Image(
+      image: MemoryImage(_recipe.image),
       fit: BoxFit.cover,
       height: 220,
     );

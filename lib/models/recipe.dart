@@ -1,3 +1,4 @@
+import 'dart:typed_data';
 import 'nutrition.dart';
 import 'user.dart';
 
@@ -8,7 +9,7 @@ class Recipe {
   String description;
   Nutrition nutrition;
   String id;
-  String image;
+  Uint8List image;
 
   Recipe(
       {this.id,
