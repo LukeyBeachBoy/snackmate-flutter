@@ -66,20 +66,16 @@ class RecipeCard extends StatelessWidget {
                    */
 
                 Container(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 25, vertical: 12),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: <Widget>[
-                        AutoSizeText(
-                          _recipe.title,
-                          style: kRecipeCardTitle,
-                        ),
-                      ],
+                    child: AutoSizeText(
+                      _recipe.title,
+                      overflow: TextOverflow.ellipsis ,
+                      style: kRecipeCardTitle,
                     ),
+                  padding: EdgeInsets.symmetric(
+    horizontal: 25, vertical: 12),
+                  width: double.infinity,
                   ),
-                ),
+
 
                 /*
                     Author Section
