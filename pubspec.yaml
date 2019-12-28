@@ -25,10 +25,10 @@ dependencies:
   cupertino_icons: ^0.1.2
   simple_moment: ^1.0.2
   auto_size_text: ^2.0.1
-  firebase_core: ^0.4.0+6
-  cloud_firestore: ^0.12.6
-  firebase_auth: ^0.11.1+7
-  firebase_storage: ^3.0.2
+  firebase_core: ^0.4.3+1
+  cloud_firestore: ^0.13.0+1
+  firebase_auth: ^0.15.3
+  firebase_storage: ^3.1.0
   rxdart: ^0.22.0
   transparent_image: ^1.0.0
 

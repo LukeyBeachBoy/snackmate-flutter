@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "925672101153",
+    "firebase_url": "https://snackmate-e27e4.firebaseio.com",
+    "project_id": "snackmate-e27e4",
+    "storage_bucket": "snackmate-e27e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925672101153:android:b7c50c9bbddaf6f9",
+        "android_client_info": {
+          "package_name": "com.lukebeach.snackmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925672101153-041pt6lbdp46bq8ks2n4k7s9r1kfubmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJuagHPfCgpI1r_Ken7vEl2nmNQsAgwxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925672101153-041pt6lbdp46bq8ks2n4k7s9r1kfubmq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "925672101153-460aqbpqgrl6b9germ0po592vmimu4h9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lukebeach.snackmate"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
